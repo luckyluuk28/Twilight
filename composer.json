@@ -1,0 +1,19 @@
+{
+    "name": "twilight/twilight",
+    "description": "A simple PHP framework made for fun",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Twilight\\Twilight\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "luckyluuk28",
+            "email": "luukvdstruik.lvds@gmail.com"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {}
+}
