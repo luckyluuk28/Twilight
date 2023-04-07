@@ -1,19 +1,33 @@
 {
-    "name": "twilight/twilight",
+    "name": "luckyluuk28/twilight",
     "description": "A simple PHP framework made for fun",
     "type": "library",
     "license": "MIT",
+    "readme": "",
+    "support": {
+        "issues": "https://github.com/luckyluuk28/Twilight/issues",
+        "source": "https://github.com/luckyluuk28/Twilight"
+    },
+    "authors": [
+        {
+            "name": "luckyluuk28",
+            "email": "luukvdstruik.lvds@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "alpha",
+    "require": {
+        "php": "^8.0",
+        "ext-pdo": "*"
+    },
     "autoload": {
         "psr-4": {
             "Twilight\\Twilight\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "luckyluuk28",
-            "email": "luukvdstruik.lvds@gmail.com"
+    "autoload-dev": {
+        "psr-4": {
+            "Twilight\\Tests\\": "tests/"
         }
-    ],
-    "minimum-stability": "alpha",
-    "require": {}
+    }
 }
