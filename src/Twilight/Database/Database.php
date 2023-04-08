@@ -11,11 +11,14 @@ use PDO;
 class Database implements DatabaseInterface
 {
     protected PDO $databaseHandle;
-
-    public function __construct(protected array $credentials)
-    {
-
-    }
+    
+    /**
+     * Main constructor
+     *
+     * @param  array $credentials
+     * @return void
+     */
+    public function __construct(protected array $credentials) { }
     
     /**
      * @inheritDoc
@@ -47,6 +50,7 @@ class Database implements DatabaseInterface
      */
     public function close()
     { 
+        // Gives alert about not being able to convert null to PDO, but I dont know how to fix it.
         $this->databaseHandle = null;
     }
 }
